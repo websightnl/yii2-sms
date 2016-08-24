@@ -1,6 +1,6 @@
 <?php
 
-namespace darkunz\yii2sms;
+namespace websightnl\yii2sms;
 
 /**
  * Interface GatewayInterface

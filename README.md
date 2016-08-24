@@ -13,7 +13,7 @@ return [
     'components' => [
         ...
         'sms' => [
-            'class' => 'darkunz\yii2sms\Twilio',
+            'class' => 'websightnl\yii2sms\Twilio',
             'sid' => '',
             'token' => '',
             'number' => '',
