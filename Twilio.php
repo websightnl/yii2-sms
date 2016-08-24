@@ -33,7 +33,7 @@ class Twilio extends Component implements GatewayInterface
     
     public function init() {
         parent::init();
-        $this->client = new Twilio\Rest\Client($this->sid, $this->token);
+        $this->client = new \Twilio\Rest\Client($this->sid, $this->token);
     }
     
     /**
