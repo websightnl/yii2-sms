@@ -1,5 +1,5 @@
 {
-    "name": "eborned/yii2-sms",
+    "name": "websightnl/yii2-sms",
     "description": "SMS Component for Yii2",
     "type": "yii2-extension",
     "version": "0.2.0",
@@ -15,8 +15,8 @@
             "email": "darwin.medillo@gmail.com"
         },
         {
-            "name": "eborned",
-            "email": "eborned@gmail.com"
+            "name": "Eric Bus",
+            "email": "eric.bus@websight.nl"
         }
     ],
     "minimum-stability": "dev",
