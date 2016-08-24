@@ -27,13 +27,13 @@ class Twilio extends Component implements GatewayInterface
     public $number;
 
     /**
-     * @var \Services_Twilio
+     * @var Twilio\Rest\Client
      */
     protected $client;
     
     public function init() {
         parent::init();
-        $this->client = new \Services_Twilio($this->sid, $this->token);
+        $this->client = new Twilio\Rest\Client($this->sid, $this->token);
     }
     
     /**
@@ -47,7 +47,9 @@ class Twilio extends Component implements GatewayInterface
             $recipient = $recipient->getMobileNumber();
         }
 
-        return $this->client->account->messages->sendMessage($this->number, $recipient, $message);
+        return $this->client->account->messages->create($this->number, $recipient, array(
+            'Body' => $message
+        ));
     }
     
 } 
