@@ -35,7 +35,8 @@ class Twilio extends Component implements GatewayInterface
         parent::init();
         $this->client = new \Twilio\Rest\Client($this->sid, $this->token);
     }
-    
+
+
     /**
      * @param string|RecipientInterface $recipient either mobile number or object implementing RecipientInterface
      * @param string $message
@@ -47,9 +48,9 @@ class Twilio extends Component implements GatewayInterface
             $recipient = $recipient->getMobileNumber();
         }
 
-        return $this->client->account->messages->create($this->number, $recipient, array(
-            'Body' => $message
+        return $this->client->account->messages->create($recipient, array(
+            'from' => $this->number,
+            'body' => $message
         ));
     }
-    
 } 
