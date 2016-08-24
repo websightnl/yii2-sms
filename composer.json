@@ -2,7 +2,7 @@
     "name": "websightnl/yii2-sms",
     "description": "SMS Component for Yii2",
     "type": "yii2-extension",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "license": "MIT",
     "keywords": ["yii2", "sms", "yii2-sms"],
     "require": {
@@ -21,6 +21,6 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": { "darkunz\\yii2sms\\": "" }
+        "psr-4": { "websightnl\\yii2sms\\": "" }
     }
 }
